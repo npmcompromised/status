@@ -8,7 +8,12 @@ const response = {
   "message": "npm has been compromised. Trust nothing.",
   "timestamp": new Date().toISOString()
 };
-document.body.innerText = JSON.stringify(response, null, 2);
+
+document.body.innerHTML = JSON.stringify(response, null, 2);
+document.body.style.fontFamily = 'monospace';
+document.body.style.whiteSpace = 'pre';
+document.body.style.margin = '0';
+document.body.style.padding = '10px';
 </script>
 </body>
 </html>
